@@ -1,0 +1,25 @@
+<div class="container-fluid mx-auto" style="width: 60vw; margin-top: 20px">
+  <div class="row">
+    <div class="col">
+      <div style="height: 300px; border: 1px solid #007bff">
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let ss of ab">{{ss.name}}:{{ss.message}}</li>
+        </ul>
+      </div>
+      <br />
+      <div class="col-auto" style="border: 1px solid #007bff">
+        <form [formGroup]="reg" id="form_grp">
+          <div class="form-group col-auto">
+            <label class="namelabel">Name</label>
+            <input formControlName="name" type="text" class="form-control namelabel" placeholder="name">
+          </div>
+          <div class="form-group col-auto">
+            <label class="namelabel">Message</label>
+            <input formControlName="msg" type="text" class="form-control namelabel" placeholder="messsage">
+          </div>
+            <button class="btn btn-primary col-auto" (click)=send()>send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
