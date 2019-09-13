@@ -1,0 +1,8 @@
+.namelabel{
+    display: inline-block;
+}
+
+#form_grp {
+    margin: 5px !important;
+    margin-bottom: -14px;
+}
